@@ -3,5 +3,6 @@ A pihole5 compatible cronjob to fetch Adlist(s) from URL and import them to the 
 
 # usage
 - Place the file into /etc/cron.daily/
+- chmod +x /etc/cron.daily/update-adlist-list
 - Modify the Variables for you needs
 - done
