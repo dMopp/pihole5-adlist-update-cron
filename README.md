@@ -3,11 +3,11 @@ A pihole5 compatible cronjob to fetch Adlist(s) from URL and import them to the 
 
 # usage
 - Place the file into /etc/cron.daily/
-- chmod +x /etc/cron.daily/update-adlist-list
+- `chmod +x /etc/cron.daily/update-adlist-list`
 - Modify the Variables for you needs
 - done
 
 # cron spam?
 If you dont like to have a daily cronmail, you can place the script somewhere else and:
-- Create a file like this: echo "bash /path/to/the/script > /dev/null 2>&1" > /etc/cron.daily/update-adlist-list-silent
-- chmod +x /etc/cron.daily/update-adlist-list-silent
+- Create a file like this: `echo "bash /path/to/the/script > /dev/null 2>&1" > /etc/cron.daily/update-adlist-list-silent`
+- `chmod +x /etc/cron.daily/update-adlist-list-silent`
