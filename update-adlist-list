@@ -28,7 +28,7 @@ cat <<EOF > ${IMPORT_SQL}
 CREATE TEMP TABLE i(txt);
 .separator ~
 .import ${ADLIST} i
-INSERT OR IGNORE INTO adlist (address) SELECT txt FROM i;
+INSERT OR IGNORE INTO adlist (address) SELECT TRIM(txt) FROM i WHERE txt LIKE 'https://%';
 DROP TABLE i;
 EOF
 
